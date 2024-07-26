@@ -1,0 +1,107 @@
+.bmi-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(187, 226, 251);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bmiwrapper {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 0.5px rgba(33, 33, 33, 0.278);
+}
+.imageBMI {
+  width: 25rem;
+  height: 25rem;
+}
+.bmidata h1 {
+  color: rgb(1, 143, 143);
+}
+.bmidata {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.input-container {
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+}
+.input-container input {
+  border: 1px solid rgb(196, 196, 196);
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 20px;
+}
+.btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.calculate {
+  height: 40px;
+  width: 6rem;
+  border-radius: 5px;
+  background-color: rgb(3, 179, 179);
+  border: 1px solid rgb(3, 179, 179);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.clear {
+  background-color: rgb(221, 50, 7);
+  height: 40px;
+  width: 6rem;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid rgb(221, 50, 7);
+}
+.clear:active,
+.clear:hover {
+  background-color: rgb(172, 38, 5);
+  cursor: pointer;
+}
+
+.calculate:hover,
+.calculate:active {
+  background-color: rgb(2, 149, 149);
+}
+.result {
+  border: 1px solid rgb(2, 200, 200);
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+}
+.result p:first-child {
+  color: rgb(3, 179, 179);
+  font-weight: 600;
+}
+.bmiresult {
+  font-weight: 600;
+}
+.error {
+  color: red;
+  padding: 0 20px 0 0;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  .bmiwrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .imageBMI {
+    width: 10rem;
+    height: 10rem;
+  }
+}
